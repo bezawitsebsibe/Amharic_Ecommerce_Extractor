@@ -49,9 +49,10 @@ def fetch_messages():
                         image_url = None
 
                         if message.media and hasattr(message.media, 'photo'):
-                            image_path = f"../data/images/{channel[1:]}_{message.id}.jpg"
+                            image_path = f"data/images/{channel[1:]}_{message.id}.jpg"
                             os.makedirs(os.path.dirname(image_path), exist_ok=True)
                             client.download_media(message.media, image_path)
+                            print(f"🖼️ Downloaded image: {image_path}")
                             image_url = image_path
 
                         clean_msg = clean_text(msg)
