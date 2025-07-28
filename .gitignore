@@ -1,0 +1,18 @@
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Environment files
+.env
+.env.*
+
+
+# Data and outputs (optional - comment out if you want to keep them)
+data/images/
+outputs/
+*.csv
+
+# Virtual environments
+venv/
+env/
+.venv/
