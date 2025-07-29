@@ -1,0 +1,6 @@
+pandas
+telethon
+transformers
+datasets
+seqeval
+torch
